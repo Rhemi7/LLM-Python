@@ -59,7 +59,7 @@ class CustomSerpAPIWrapper(SerpAPIWrapper):
 #        return toret
 
 
-def get_profile_url(name: str):
+def get_profile_url(name: str) -> str:
     """Searches for Linkedin or twitter Profile Page."""
     search = CustomSerpAPIWrapper()
     res = search.run(f"{name}")
